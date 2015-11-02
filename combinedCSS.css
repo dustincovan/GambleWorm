@@ -1,0 +1,1446 @@
+/* reset browser styles */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end reset browser styles */
+
+
+/******************************************************************************************************/
+
+
+/* INTRO TEASER */
+
+#introBookie
+{
+	background: transparent url(sprites/bookie_sprite_medium_chop_rainbow_1175x365.png) 0 0 no-repeat;
+	margin-top: 1px;
+	margin-left: 7px;
+	width: 235px;
+	height: 365px;
+}
+
+#introBookieBox
+{
+	width: 265px;
+	height: 390px;
+	margin-top: 115px;
+	margin-left: auto;
+	margin-right: auto;
+	border: double #00FFF0;
+}
+
+#introBookieBoxInner
+{
+	margin-top: 9px;
+	margin-left: 12px;
+	width: 235px;
+	height: 365px;
+	border: double #FF008A;
+	position: absolute;
+	overflow: hidden;
+}
+
+#introTeaserButton, #introTeaserButton2, #introTeaserButton3, #introTeaserButton4
+{
+	width: 180px;
+	margin-top: 305px;
+	
+	margin-left: 547px;
+	
+	box-shadow: 0 0 20px #C6FF00;
+	display: block;
+	position: absolute;
+	z-index: 300;
+}
+
+#amazonUnicornWalking_01
+{
+	background: transparent url(sprites/amazonUnicornWalk_2100x450_tinyPNG.png) 0 0 no-repeat;
+	margin-top: 85px;
+	margin-left: 940px;
+	width: 300px;
+	height: 450px;
+	position: absolute;
+	z-index: 100;
+}
+
+#amazonUnicornWalking_02
+{
+	background: transparent url(sprites/amazonUnicornWalk_2100x450_tinyPNG.png) 0 0 no-repeat;
+	margin-top: 85px;
+	margin-left: 750px;
+	width: 300px;
+	height: 450px;
+	position: absolute;
+	z-index: 100;
+}
+
+#amazonUnicornWalking_03
+{
+	background: transparent url(sprites/amazonUnicornWalk_2100x450_tinyPNG.png) 0 0 no-repeat;
+	margin-top: 85px;
+	margin-left: 32px;
+	width: 300px;
+	height: 450px;
+	position: absolute;
+	z-index: 100;
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg); /* Safari */
+    transform: rotateY(180deg);
+}
+
+#amazonUnicornWalking_04
+{
+	background: transparent url(sprites/amazonUnicornWalk_2100x450_tinyPNG.png) 0 0 no-repeat;
+	margin-top: 85px;
+	margin-left: 127px;
+	width: 300px;
+	height: 450px;
+	position: absolute;
+	z-index: 100;
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg); /* Safari */
+    transform: rotateY(180deg);
+}
+
+#amazonUnicornWalking_05
+{
+	background: transparent url(sprites/amazonUnicornWalk_2100x450_tinyPNG.png) 0 0 no-repeat;
+	margin-top: 85px;
+	margin-left: 222px;
+	width: 300px;
+	height: 450px;
+	position: absolute;
+	z-index: 100;
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg); /* Safari */
+    transform: rotateY(180deg);
+}
+
+#amazonUnicornWalking_06
+{
+	background: transparent url(sprites/amazonUnicornWalk_2100x450_tinyPNG.png) 0 0 no-repeat;
+	margin-top: 85px;
+	margin-left: 850px;
+	width: 300px;
+	height: 450px;
+	position: absolute;
+	z-index: 100;
+}
+
+#introTeaserMainbody
+{
+  display: none;
+  width: 1300px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  overflow: hidden;
+  background-color: black;
+  border: double #00FFF0;
+}
+
+#introTeaserInnerBody
+{
+	background: transparent url(images/gambleWormIntroTeaser_tinyPNG.png) 0 0 no-repeat;
+	width: 1272px;
+	height: 614px;
+	border: double #FF008A;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+#introDollarSignLeft
+{
+	background: transparent url(sprites/dollarSignsBluePinkGeorgiaBlack290_tinyPNG.png) 0 0 no-repeat;
+	width: 90px;
+	height: 135px;
+	float: left;
+	margin-left: 70px;
+	margin-top: 65px;
+}
+
+#introDollarSignRight
+{
+	background: transparent url(sprites/dollarSignsPinkBlueGeorgiaBlack290_tinyPNG.png) 0 0 no-repeat;
+	width: 90px;
+	height: 135px;
+	float: right;
+	margin-right: 70px;
+	margin-top: 65px;
+}
+
+#introDollarSignLeftTiny
+{
+	background: transparent url(sprites/dollarSignsPinkBlueGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 445px;  
+	margin-top: 60px;
+}
+
+#introDollarSignRightTiny
+{
+	background: transparent url(sprites/dollarSignsBluePinkGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 625px;
+	margin-top: 205px;
+}
+
+#introDollarSignMiddleTiny
+{
+	background: transparent url(sprites/dollarSignsBluePinkGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 445px;
+	margin-top: -50px;
+}
+
+/* START SCREEN */
+
+#startDollarSignLeftTiny
+{
+	background: transparent url(sprites/dollarSignsPinkBlueGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-left: 265px;  
+	margin-top: -105px;
+}
+
+#startDollarSignRightTiny
+{
+	background: transparent url(sprites/dollarSignsBluePinkGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 265px;
+	margin-top: -105px;
+}
+
+#startDollarSignLeftTiny2
+{
+	background: transparent url(sprites/dollarSignsBluePinkGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: left;    
+	margin-left: 465px;  
+	margin-top: -102px;
+}
+
+#startDollarSignRightTiny2
+{
+	background: transparent url(sprites/dollarSignsPinkBlueGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 465px;
+	margin-top: -102px;
+}
+
+#startDollarSignLeftTiny3
+{
+	background: transparent url(sprites/dollarSignsBluePinkGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: left;    
+	margin-left: 65px;  
+	margin-top: -102px;
+}
+
+#startDollarSignRightTiny3
+{
+	background: transparent url(sprites/dollarSignsPinkBlueGeorgiaBlack2Tiny_tinyPNG.png) 0 0 no-repeat;
+	width: 50px;
+	height: 50px;
+	float: right;
+	margin-right: 65px;
+	margin-top: -102px;
+}
+
+#startScreenMainbody
+{
+  display: none;
+  width: 1300px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  overflow: hidden;
+  background-color: black;
+  border: double #00FFF0;
+}
+
+#startScreenInnerBody
+{
+   background: transparent url(images/GambleWormStartScreenBig_tinyPNG.png) 0 0 no-repeat;
+   color: #C6FF00;
+   width: 1272px;
+   height: 614px;
+   border: double #FF008A;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+}
+
+#startGame
+{
+	width: 180px;
+	margin-top: 305px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 0 0 20px #C6FF00;
+	display: block;
+}
+
+#greenWormStartScreen
+{
+	background: transparent url(sprites/green_worm_sprite_500x140.png) 0 0 no-repeat;
+	position: relative;
+	margin-top: -85px;
+	margin-left: 120px;
+	width: 125px;
+	height: 140px;
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg); /* Safari */
+    transform: rotateY(180deg);
+}
+
+#purpleWormStartScreen
+{
+	background: transparent url(sprites/purple_worm_sprite_500x140.png) 0 0 no-repeat;
+	position: relative;
+	margin-top: -138px;
+	margin-left: 325px;
+	width: 125px;
+	height: 140px;
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg); /* Safari */
+    transform: rotateY(180deg);
+}
+
+#blueWormStartScreen
+{
+	background: transparent url(sprites/blue_worm_sprite_500x140.png) 0 0 no-repeat;
+	position: relative;
+	margin-top: -138px;
+	margin-left: 822px;
+	width: 125px;
+	height: 140px;
+}
+
+#orangeWormStartScreen
+{
+	background: transparent url(sprites/orange_worm_sprite_500x140.png) 0 0 no-repeat;
+	position: relative;
+	margin-top: -138px;
+	margin-left: 1038px;
+	width: 125px;
+	height: 140px;
+}
+
+
+/* LOCATIONS */
+
+body
+{
+	background-color: black;
+}
+
+#locationMainbody 
+{
+  display: none;
+  width: 1300px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  overflow: hidden;
+  background-color: black;
+  border: double #00FFF0;
+}
+
+#innerbody
+{
+   background: transparent url(images/location_background_revised_tinyPNG.png) 0 0 no-repeat;
+   color: #C6FF00;
+   width: 1272px;
+   height: 614px;
+   border: double #FF008A;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 10px;
+}
+
+#locations
+{
+   width: 1220px;
+   height: 310px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: -3px;
+   cursor: pointer;
+}
+
+#icons
+{
+	width: 1220px;
+	height: 310px;
+	margin-right: auto;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+#locationsText
+{
+   width: 1220px;
+   height: 50px;
+   margin-left: 25px;
+   margin-top: -302px;
+   cursor: pointer;
+   position: absolute;  
+}
+
+#work, #races, #burglary
+{
+	margin-left: 75px;
+}
+
+
+#racingIcon
+{
+	background: transparent url(sprites/racing_icon_sprite_tinyPNG.png) 0 0 no-repeat;
+	margin-top: -305px;
+	margin-left: 454px;
+	width: 300px;
+	height: 300px;
+	z-index: 100;
+	position: absolute;
+	cursor: pointer;
+}
+
+#burglaryIcon
+{
+	background: transparent url(sprites/burglary_icon_sprite_tinyPNG.png) 0 0 no-repeat;
+	margin-top: -305px;
+	margin-left: 833px;
+	width: 300px;
+	height: 300px;
+	z-index: 100;
+	position: absolute;
+	cursor: pointer;	
+}
+
+#workIcon
+{
+	background: transparent url(sprites/tickle_icon_solo_sprite_tinyPNG.png) 0 0 no-repeat;
+	margin-top: -305px;
+	margin-left: 75px;
+	width: 300px;
+	height: 300px;
+	z-index: 100;
+	position: absolute;
+	cursor: pointer;	
+}
+
+
+#workText, #racesText, #burglaryText
+{
+   color: #C6FF00;
+   font-size: 2em;
+   border: double #FF008A;
+   width: 150px;
+   height: 40px;
+   padding-top: 8px;
+   padding-bottom: 5px;
+   text-align: center;
+   float: left;
+   cursor: pointer;
+}
+
+#racesText
+{
+   margin-left: 225px;
+}
+
+#burglaryText
+{
+   margin-left: 225px;
+}
+
+#workText
+{
+   margin-left: 146px;
+}
+
+.frame_location
+{
+	border: double #FF008A;
+	margin-top: 3px;
+	padding-top: 8px;
+	padding-bottom: 15px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.legend_location, .legend_work, .legend_races, .legend_burglary
+{
+	text-align: center;
+	color: #00FFF0;
+	font-size: 1.4em;
+}
+
+#locationContainer
+{
+	width: 300px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+}
+
+#tally, #tally_work
+{
+	color: #72FF00;
+	font-size: 1.5em;
+}
+
+#tally2
+{
+	color: #72FF00;
+}
+
+#firstDollarSign_location
+{
+	margin-left: -10px;
+	font-size: 1.5em;
+}
+
+#totalNeededContainer
+{
+	float: right;
+	width: 100px;
+	position: relative;
+	margin-right: 65px;
+}
+#ofWord
+{
+	margin-left: 15px;
+	font-size: 1.5em;
+}
+
+#totalNeeded
+{
+	margin-left: 15px;
+	font-size: 1.5em;
+}
+
+#left
+{
+	font-size: 1.5em;
+	float: left;
+	margin-left: 50px;
+	margin-top: 40px;
+	z-index: 100;
+	
+}
+
+#right
+{
+	font-size: 1.5em;
+	float: right;
+	margin-right: 50px;
+	margin-top: -70px;
+	z-index: 100;
+}
+
+.dollarSigns
+{
+	
+	width: 400px;
+	height: 50px;
+	text-align: center;
+}
+
+#bottomText
+{
+   
+   width: 1220px;
+   height: 50px;
+   margin-right: auto;
+   margin-left: auto;
+   margin-top: 68px;
+   text-align: center;
+   font-size: 1.5em;
+   
+}
+
+#locationBankrollHolder
+{
+	text-align: center;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ui-dialog
+{
+	text-align: center;
+
+}
+
+.ui-dialog .ui-dialog-title 
+{
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+.ui-dialog .ui-dialog-titlebar
+{
+	background: #00FFF0;
+	color: #FF008A;
+	text-align: center;
+}
+
+.no-close  .ui-dialog-titlebar-close 
+{
+	display: none; 
+}
+
+.ui-dialog .ui-dialog-buttonpane 
+{ 
+	text-align: center;
+}
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset 
+{ 
+	float: none;
+}
+
+:focus {outline:none !important;}
+
+
+
+
+/******************************************************************************************************/
+
+
+
+/* WORK */ 
+
+
+#workMainbody 
+{
+  display: none;
+  width: 1300px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  overflow: hidden;
+  background-color: black;
+  border: double #00FFF0;
+}
+
+#manNuggets
+{
+	background: transparent url(images/work_background_tinyPNG.png) 0 0 no-repeat;
+	width: 865px;
+	height: 622px;
+	float: left;
+	margin-top: 7px;
+	margin-left: 7px;
+	border: double #FF008A;
+	overflow: hidden;
+	position: absolute;
+}
+
+ #workInfo
+{
+	color: #C6FF00;
+	width: 378px;
+	 
+	height: 622px;
+	padding-right: 10px;
+	padding-left: 10px;
+	
+	margin-top: 7px;
+	margin-left: 889px;
+	position: absolute;
+	overflow: hidden;
+	border: double #FF008A;
+}
+
+ #bookie_work
+{
+	background: transparent url(sprites/bookie_sprite_medium_chop_rainbow.png) 0 0 no-repeat;
+	margin-top: 28px;
+	margin-left: 155px;
+	width: 270px;
+  	height: 420px;
+}
+
+.bookieTalk_work
+{
+	width: 175px;
+	height: 300px;
+	margin-top: 5px;
+	position: absolute;
+	text-align: center;
+}
+
+#orderText
+{
+	color: #72FF00;
+	font-size: 1.5em;
+	padding: 10px;
+}
+
+.text, .locationText
+{
+	margin-top: 7px;
+	font-size: 1.2em;
+}
+
+
+#ordersCorrectlyFilled
+{
+	font-size: 1.5em;
+	color: #FF008A;
+}
+
+.soFarText
+{
+	color: #FF008A;
+}
+
+.frame_work
+{
+	border: double #FF008A;
+	margin-top: 3px;
+	padding-top: 4px;
+	padding-bottom: 13px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.btn
+{
+	width: 85px;
+	font-size: .8em;	
+}
+
+#iQuit
+{
+	margin-right: -3px;
+	width: 65px;
+	float: right;
+}
+
+#tryAgain
+{
+	margin-left: -4px;
+	width: 85px;
+	float: left;
+}
+
+#secondBookieTalk
+{
+	margin-top: 5px;
+}
+
+#thirdBookieTalk
+{
+	margin-top: 14px;
+}
+
+ #first_work, #first_races, #first_burglary, #second_races, #second_burglary, #third_races
+{
+	padding-top: 5px;
+	max-width: 385px;
+	word-wrap: break-word;
+	text-align: center;
+}
+
+#firstDollarSign, #firstDollarSign_races
+{
+	font-size: 1.5em;
+}
+
+#pinkFighter
+{
+	background: transparent url(sprites/hanging_pink_sprite_tinyPNGmini.png) 0 0 no-repeat;
+	width: 150px;
+	height: 560px;
+	position: absolute;
+	
+}
+
+#blueFighter
+{
+	
+	background: transparent url(sprites/hanging_blue_sprite_tinyPNGmini.png) 0 0 no-repeat;
+	width: 150px;
+	height: 560px;
+	position: absolute;
+	
+	
+}
+
+#greenFighter
+{
+	
+	background: transparent url(sprites/hanging_green_sprite_tinyPNGmini.png) 0 0 no-repeat;
+	width: 150px;
+	height: 560px;
+	position: absolute;
+	
+}
+
+#yellowFighter
+{
+	
+	background: transparent url(sprites/hanging_yellow_sprite_tinyPNGmini.png) 0 0 no-repeat;
+	width: 150px;
+	height: 560px;
+	position: absolute;
+	
+}
+
+#orangeFighter
+{
+	
+	background: transparent url(sprites/hanging_orange_sprite_tinyPNGmini.png) 0 0 no-repeat;
+	width: 150px;
+	height: 560px;
+	position: absolute;
+}
+
+#purpleFighter
+{
+	
+	background: transparent url(sprites/hanging_purple_sprite_tinyPNGmini.png) 0 0 no-repeat;
+	width: 150px;
+	height: 560px;
+	position: absolute;
+}
+
+#whiteFighter
+{
+	background: transparent url(sprites/hanging_white_sprite_tinyPNGmini.png) 0 0 no-repeat;
+	width: 150px;
+	height: 560px;
+	position: absolute;
+}
+
+#redFighter
+{
+	background: transparent url(sprites/hanging_red_sprite_tinyPNGmini.png) 0 0 no-repeat;
+	width: 150px;
+	height: 560px;
+	position: absolute;
+}
+
+#wordsContainer 
+{
+	height: 60px;
+	width:836px;
+	margin-left: 11px;
+	margin-top: 543px;
+	border: double #00FFF0;
+	position: absolute;
+	background-color: black;
+	overflow: hidden;
+}
+
+.rollingWords
+{
+	color: #72FF00;
+	font-size: 2.3em;
+	border: double #FF008A;
+	padding-top: 2px;
+	padding-bottom: 8px;
+	margin-top: 3px;
+	position: absolute;
+	width: 120px;
+	text-align: center;
+}
+
+#initialGreeting
+{
+	color: #72FF00;
+	font-size: 2.2em;
+	text-align: center;
+	margin-top: 10px;
+}
+
+
+
+/******************************************************************************************************/
+
+
+
+/* RACING */
+
+
+#racingMainbody 
+{
+  display: none;
+  width: 1300px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  overflow: hidden;
+  background-color: black;
+  border: double #00FFF0;
+}
+
+#racers
+{
+	background: transparent url(images/racing_background3_tinyPNG.png) 0 0 no-repeat; 
+	width: 865px;
+	height: 622px;
+	float: left;
+	margin-top: 7px;
+	margin-left: 7px;
+	border: double #FF008A;
+}
+
+#greenWorm
+{
+	background: transparent url(sprites/green_worm_sprite_500x140.png) 0 0 no-repeat;
+	position: relative;
+	margin-top: 50px;
+	margin-left: 687px;
+	width: 125px;
+	height: 140px;
+	z-index: 100;
+}
+
+#purpleWorm
+{
+	background: transparent url(sprites/purple_worm_sprite_500x140.png) 0 0 no-repeat;
+	position: relative;
+	margin-top: -10px;
+	margin-left: 687px;
+	width: 125px;
+	height: 140px;
+	z-index: 100;
+}
+
+#blueWorm
+{
+	background: transparent url(sprites/blue_worm_sprite_500x140.png) 0 0 no-repeat;
+	position: relative;
+	margin-top: -8px;
+	margin-left: 687px;
+	width: 125px;
+	height: 140px;
+	z-index: 100;
+}
+
+#orangeWorm
+{
+	background: transparent url(sprites/orange_worm_sprite_500x140.png) 0 0 no-repeat;
+	position: relative;
+	margin-top: -18px;
+	margin-left: 687px;
+	width: 125px;
+	height: 140px;
+	z-index: 100;
+}
+
+#greenLine
+{
+	background: #72FF00;
+	opacity : 1.0;
+	position: relative;
+	margin-top: -70px;
+	margin-left: 90px;
+	width: 598px;
+	height: 10px;
+	float: left;
+}
+
+#purpleLine
+{
+	background: #BA1AC4;
+	opacity : 1.0;
+	position: relative;
+	margin-top: -75px;
+	margin-left: 90px;
+	width: 598px;
+	height: 10px;
+	float: left;
+}
+
+#blueLine
+{
+	background: #00FFF0;
+	opacity : 1.0;
+	position: relative;
+	margin-top: -80px;
+	margin-left: 90px;
+	width: 598px;
+	height: 10px;
+	float: left;
+}
+
+#orangeLine
+{
+	background: #FF9000;
+	opacity : 1.0;
+	position: relative;
+	margin-top: -80px;
+	margin-left: 90px;
+	width: 598px;
+	height: 10px;
+	float: left;
+}
+
+#raceInfo
+{
+	color: #C6FF00;
+	width: 378px;
+	 
+	height: 622px;
+	padding-right: 10px;
+	padding-left: 10px;
+	float: right;
+	margin-top: 7px;
+	margin-right: 7px;
+	overflow: hidden;
+	border: double #FF008A;
+}
+
+
+.instructions
+{
+	float: left;
+}
+
+.inputs
+{
+	float: left;
+}
+
+.frame_races
+{
+	border: double #FF008A;
+	margin-top: 3px;
+	padding-top: 4px;
+	padding-bottom: 13px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.frame2_races
+{
+	border: double #FF008A;
+	margin-top: 3px;
+	padding-top: 4px;
+	padding-bottom: 10px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+.frame3_races
+{
+	border: double #FF008A;
+	margin-top: 3px;
+	padding-top: 2px;
+	padding-bottom: 12px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+#inputContainer
+{
+	margin-left: -50px;
+	margin-top: 15px;
+	width: 200px;
+}
+
+#buttonContainer
+{
+	width: 50px;
+	margin-top: -30px;
+	margin-left: 167px;
+	float: left;
+}
+
+#buttonContainer2
+{
+	width: 50px;
+	margin-top: -30px;
+	margin-right: 40px;
+	float: right;
+}
+
+#bet
+{
+	float: left;
+	width: 97px;
+}
+
+#dollarSign
+{
+	float: left;
+	margin-top: 5px;
+	margin-left: 55px;
+	font-size: 1.5em;
+}
+
+#betHolder
+{
+	width: 100px;
+	float: right;
+	margin-right: 23px;
+}
+
+#wrapper
+{
+	text-align: center;
+	margin-top: 5px;
+	padding-bottom: 30px;
+}
+
+#bookie_races
+{
+	background: transparent url(sprites/bookie_sprite_medium_chop_rainbow_1175x365.png) 0 0 no-repeat;
+	margin-top: -1px;
+	margin-left: 173px;
+	width: 235px;
+	height: 365px;
+}
+
+.bookieTalk_races
+{
+	float: left;
+	width: 175px;
+	min-height: 300px;
+	margin-top: 20px;
+}
+
+#bookieTalk2_races
+{
+	margin-top: 17px;
+}
+
+
+#whip
+{
+	width: 155px;
+	font-size: .8em;
+	float: left;
+	margin-top: 300px;
+	margin-left: -167px;
+}
+
+#oneMoreRace
+{
+	width: 125px;
+	font-size: .8em;
+	float: left;
+	margin-top: 305px;
+	margin-left: -155px;
+}
+
+#yourPickCheer, #yourBetCheer, #winnerResultParagraph, #wonOrLostMoneyAmountParagraph
+{
+	font-size: 1.8em;
+}
+
+
+
+/******************************************************************************************************/
+
+
+
+
+/* BURGLARY */
+
+
+.ui-button:focus { outline:none !important }
+
+
+#burglaryMainbody 
+{
+  display: none;
+  width: 1300px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  overflow: hidden;
+  background-color: black;
+  border: double #00FFF0;
+}
+
+#burglaryLeft
+{
+  background: transparent url(images/burglary_background_tinyPNG.png) 0 0 no-repeat;
+  float: left;
+  width: 815px;
+  height: 616px;
+  margin-top: 10px;
+  margin-left: 10px;
+  border: double #FF008A;
+}
+
+#blue, #blueGray, #blueGold
+{
+  
+  border: double #FF008A;
+  margin-left: 94px;
+  margin-top: 73px;
+  
+}
+
+#red, #redGray, #redGold
+{
+  margin-left: 10px;
+  margin-top: 73px;
+  border: double #FF008A;
+  
+}
+
+#yellow, #yellowGray, #yellowGold
+{
+  margin-top: 6px;
+  margin-left: 94px;
+  border: double #FF008A;
+  
+}
+
+#green, #greenGray, #greenGold
+{
+  margin-left: 10px;
+  margin-top: 6px;
+  border: double #FF008A;
+  
+}
+/* end left side items */
+
+#burglaryRight
+{
+  float: right;
+  width: 450px;
+  height: 610px;
+}
+
+#redCopBar
+{
+  background: #FF0048;
+  opacity: 0.8;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 175px;
+  width: 240px;
+  height: 35px;
+  float: left;
+  border: double #00FFF0; 
+}
+
+.copSpeechTop
+{
+  font-size: 1.3em;
+  color: #C6FF00;
+  position: relative;
+  margin-left: 142px;
+  margin-top: 18px;
+}
+
+.copSpeechBottom
+{
+  font-size: 1.3em;
+  color: #C6FF00;
+  position: relative;
+  margin-left: 145px;
+  margin-top: 83px;
+}
+
+#info-top
+{
+  text-align: center;
+  width: 440px;
+  height: 168px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+  border: double #FF008A;
+  background: transparent url(images/handcuffs_blue_pink.png) 0 0 no-repeat;
+}
+
+#info-bottom
+{
+  
+  width: 440px;
+  height: 432px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: double #FF008A;
+  color: #C6FF00;
+  overflow: hidden;
+}
+
+#bookie_burglary
+{
+  background: transparent url(sprites/bookie_sprite_medium_chop_rainbow.png) 0 0 no-repeat;
+  margin-top: 12px;
+  margin-left: 200px;
+  width: 270px;
+  height: 420px;
+}
+
+#take
+{
+  color: #72FF00;
+  font-size: 1.4em;
+}
+
+#runDown, #burglarize, #clickIt
+{
+  font-size: 1.2em;
+  color: #C6FF00;
+  text-align: center;
+  padding: 8px;
+  padding-top: 20px;
+}
+
+.frame_burglary
+{
+	border: double #FF008A;
+	width: 195px;
+	height: 400px;
+	margin-top: 10px;
+	margin-left: 12px;
+	
+	color: #C6FF00;
+	text-align: center;
+	float: left;
+}
+
+.bookieTalk_burglary
+{
+	border: double #FF008A;
+	width: 190px;
+	height: 400px;
+	margin-top: 10px;
+	margin-left: 12px;
+	font-size: 1.4em;
+	color: #C6FF00;
+	text-align: center;
+	float: left;
+}
+
+.buttonContainer
+{
+  width: 88px;
+  margin-left: 8px;
+  margin-top: 20px;
+  position: relative;
+  float: left;
+}
+
+.buttonContainer2
+{
+  width: 85px;
+  margin-right: 8px;
+  margin-top: 20px;
+  position: relative;
+  float: right;
+}
+
+#leftButton
+{
+	width: 87px;
+}
+
+.rollover
+{
+  z-index:100;
+}
+
+
+/******************************************************************************************************/
+
+
+/* END GAME */
+
+
+#endGameMainbody
+{
+  display: none;
+  width: 1300px;
+  height: 642px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2px;
+  overflow: hidden;
+  background-color: black;
+  border: double #00FFF0;
+}
+
+#endGameInnerBody
+{
+	background: transparent url(images/gambleWormIntroTeaser_tinyPNG.png) 0 0 no-repeat;
+	width: 1272px;
+	height: 614px;
+	border: double #FF008A;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	overflow: hidden;
+	color: yellow;
+}
