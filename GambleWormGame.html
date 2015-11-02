@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Gamble, Worm!
+		</title>
+
+		<meta charset="UTF-8">
+
+		<link rel="stylesheet" type="text/css" media="screen" href="_css/jquery-ui.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="_css/combinedCSS.css">
+
+		<script src="_js/jquery.min.js"></script>
+		<script src="_js/jquery-ui.min.js"></script>
+		<script src="_js/jquery.spritely.js"></script>
+		<script src="_js/underscore.js"></script>
+		<script src="_js/pause.js"></script>
+
+		<script src="_js/onePage_gambleWormStartScreen.js" type="text/javascript"></script>
+		<script src="_js/onePage_gambleWormLocation.js" type="text/javascript"></script>
+		<script src="_js/onePage_gambleWormWork.js" type="text/javascript"></script>
+		<script src="_js/onePage_gambleWormRacing.js" type="text/javascript"></script>
+		<script src="_js/onePage_gambleWormBurglary.js" type="text/javascript"></script>
+
+
+	</head>
+	<body>
+	  <div id="allPartsOfGameCombined">
+
+	  	<audio loop preload="metadata" id="introTeaserSound"><source src="sounds/introTeaser.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/mikemunkie/ -->
+		<audio loop preload="metadata" id="startScreenSong"><source src="sounds/startScreen.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/orangefreesounds/ -->
+		<audio preload="metadata" id="footstepsSound"><source src="sounds/footstepsCompressed.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/Taira%20Komori/ -->
+
+		<div id="introTeaserMainbody">
+			<div id="introTeaserInnerBody">
+				<div id="introDollarSignLeft"></div>
+				<div id="introDollarSignRight"></div>
+				<div id="introDollarSignLeftTiny"></div>
+				<div id="introDollarSignRightTiny"></div>
+				<div id="introDollarSignMiddleTiny"></div>
+				<div id="introDollarSignUpperTiny"></div>
+
+				<input type="button" onclick="" id="introTeaserButton" class="btn" value="All You'll Need Is...">
+				<input type="button" onclick="" id="introTeaserButton2" class="btn" value="...$25,000...">
+				<input type="button" onclick="" id="introTeaserButton3" class="btn" value="...To Come Inside And...">
+				<input type="button" onclick="" id="introTeaserButton4" class="btn" value="...Get Busy Living!">
+				<div id="amazonUnicornWalking_01"></div>
+				<div id="amazonUnicornWalking_02"></div>
+				<div id="amazonUnicornWalking_03"></div>
+				<div id="amazonUnicornWalking_04"></div>
+				<div id="amazonUnicornWalking_05"></div>
+				<div id="amazonUnicornWalking_06"></div>
+				<div id="introBookieBox">
+					<div id="introBookieBoxInner">
+						<div id="introBookie"></div>
+					</div>
+				</div>
+			</div>
+		</div> <!-- end introTeaserMainbody -->
+
+<!-- ************************************************************************************************************** -->
+
+
+		<div id="startScreenMainbody">
+			<div id="startScreenInnerBody">
+				<input type="button" onclick="" id="startGame" class="btn" value="The World Is Yours!">
+				<div id="greenWormStartScreen"></div>
+				<div id="purpleWormStartScreen"></div>
+				<div id="blueWormStartScreen"></div>
+				<div id="orangeWormStartScreen"></div>
+				<div id="startDollarSignLeftTiny"></div>
+				<div id="startDollarSignRightTiny"></div>
+				<div id="startDollarSignLeftTiny2"></div>
+				<div id="startDollarSignRightTiny2"></div>
+				<div id="startDollarSignLeftTiny3"></div>
+				<div id="startDollarSignRightTiny3"></div>
+			</div> <!-- end startScreenInnerBody -->
+		</div> <!-- end startScreenMainbody -->
+
+<!-- ************************************************************************************************************** -->
+
+
+		<div id="locationMainbody">
+			<div id="innerbody">
+
+				<div id="locationContainer">
+					<div class="bank_location" id="bank_location"></div>
+				</div><!-- end container -->
+
+				<div id="locations">
+					<img src="images/Blue_Location.png" class="destination" id="work" alt="work">	
+					<img src="images/Orange_Location.png" class="destination" id="races" alt="races">
+					<img src="images/Green_Location.png" class="destination" id="burglary" alt="burglary">
+				</div><!-- end locationLocations -->
+
+				<div id="icons">
+					<div class="icon" id="racingIcon"></div>
+					<div class="icon" id="burglaryIcon"></div>
+					<div class="icon" id="workIcon"></div>
+				</div> <!-- end locationIcons -->
+
+				<div id="locationsText">
+					<div id="workText" class="locationText"><span>Work</span></div>
+					<div id="racesText" class="locationText"><span>Races</span></div>
+					<div id="burglaryText" class="locationText"><span>Burglary</span></div>
+				</div><!-- end locationsText -->
+
+			</div><!-- end innerbody -->
+
+			<div class="alert" id="noEntry">This ain't a soup kitchen, buddy! Come back when you have some cash!</div>
+			<div class="alert" id="burglaryAlert">Here's how things are going to go: Either you turn around right now and get the hell out of here, or you get maced! Your choice!</div>
+		</div><!-- end locationMainbody -->
+
+<!-- ************************************************************************************************************** -->
+
+		
+		<div id="workMainbody">
+			<div id="manNuggets">
+				<div class="fighters" id="pinkFighter"></div>
+				<div class="fighters" id="blueFighter"></div>
+				<div class="fighters" id="greenFighter"></div>
+				<div class="fighters" id="yellowFighter"></div>
+				<div class="fighters" id="orangeFighter"></div>
+				<div class="fighters" id="purpleFighter"></div>
+				<div class="fighters" id="whiteFighter"></div>
+				<div class="fighters" id="redFighter"></div>
+				<div id="wordsContainer">
+					<p id="initialGreeting"></p>
+				</div>
+			</div><!-- end manNuggets -->
+
+			<div id="workInfo">
+				<div id="first_work">
+					<div class="bank_work" id="bank_work"></div>
+					<form id="formWork" name="formWork">
+						<fieldset class="frame_work">
+							<legend class="legend_work">Orders Filled Correctly:</legend>
+							<div id="orderBox"><p id="orderText"><span id="ordersCorrectlyFilled">0</span> out of 80!</p></div>
+						</fieldset>
+					</form>
+							 
+					<div class="bookieTalk_work" id="firstBookieTalk">
+						<fieldset class="frame_work">
+							<legend class="legend_work">Lunch Rush!</legend>
+							<div class="talk"><p class="text">I've got a line a mile long out here of angry, hungry customers, dying for man-nuggets!</p></div><br>
+							<div><p class="text">And let me tell ya, these wiggly little freaks ain't gonna deep-fry themselves!</p></div><br>
+							<div><p class="text">So, don't just stand there, net up and get started before these customers rip the place apart!</p></div>
+							<br>
+							<input type="button" onclick="" id="hairNet" class="btn" value="Hair Net!">		
+						</fieldset>
+					</div> <!-- end firstBookieTalk -->
+
+					<div class="bookieTalk_work" id="secondBookieTalk">
+						<fieldset class="frame_work">
+							<legend class="legend_work">Remember!</legend>
+							<div class="talk"><p class="text">Once the orders start rolling in you need to click each man-nugget in the <span style="color: #00FFF0">EXACT ORDER</span> I give you or you're fired! Got it?!</p></div><br>
+							<div><p class="text">If you get backed up, <span style="color: #00FFF0">CLOCK OUT TO FREEZE THE ORDERS ONCE</span>, and get caught up!</p></div><br>
+							<div class="talk"><p class="text">Just don't forget to clock back in! Now get cooking!</p></div><br>
+							
+							<input type="button" onclick="" id="clockIn" class="btn" value="Clock In!">
+							<input type="button" onclick="" id="clockOut" class="btn" value="Clock Out!">
+							<input type="button" onclick="" id="clockInAgain" class="btn" value="Clock In!">
+							<input type="button" onclick="" id="iQuitEarly" class="btn" value="I Quit!">		
+						</fieldset>
+					</div> <!-- end secondBookieTalk -->
+
+					<div class="bookieTalk_work" id="thirdBookieTalk">
+						<fieldset class="frame_work">
+							<legend class="legend_work">You Bum!</legend>
+							<div class="talk"><p class="text">I oughta fire you right now, but we're swamped!</p></div><br>
+							<div><p class="text" id="whatWrongColorWasPicked"></p></div><br>
+							<div><p class="text">It doesn't make any freakin' sense!</p></div>
+							<br>
+							<div><p class="text">I really don't know what to do here. You tell me!</p></div>
+							<br>
+							<input type="button" onclick="" id="tryAgain" class="btn" value="Try Again!">
+							<input type="button" onclick="" id="iQuit" class="btn" value="I Quit!">		
+						</fieldset>
+					</div> <!-- end thirdBookieTalk -->
+
+					<div class="bookieTalk_work" id="fourthBookieTalk">
+						<fieldset class="frame_work">
+							<legend class="legend_work">Well, Well!</legend>
+							<div class="talk"><p class="text">Look at the big dipper on this guy!</p></div><br>
+							<div><p class="text">I never thought you had it in you to go 8 hours without blowing it!</p></div>
+							<br>
+							<div><p class="text">Now, if that paycheck starts burning a hole in your pocket, come see me at the track!</p></div>
+							<br>
+							<div><p class="text">If not, I'll see you tomorrow!</p></div>
+							<br>
+							<input type="button" onclick="" id="goHome_work" class="btn" value="Go Home!">		
+						</fieldset>
+					</div> <!-- end fourthBookieTalk -->
+
+					<div id="bookie_work"></div>
+				</div><!-- end first_work -->
+			</div><!-- end workInfo -->
+			</div><!-- end workMainBody -->
+
+
+<!-- ************************************************************************************************************** -->
+
+
+		<audio preload="metadata" id="whipSound"><source src="sounds/whip.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/CGEffex/ -->
+		<audio preload="metadata" id="chaChing"><source src="sounds/chaChingCompressed.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/creek23/ -->
+
+		<div id="racingMainbody">
+
+			<div id="racers">
+				<div class="green" id="greenWorm"></div>
+				<div class="green" id="greenLine"></div>
+				<div class="purple" id="purpleWorm"></div>
+				<div class="purple" id="purpleLine"></div>
+				<div class="blue" id="blueWorm"></div>
+				<div class="blue" id="blueLine"></div>
+				<div class="orange" id="orangeWorm"></div>
+				<div class="orange" id="orangeLine"></div>
+			</div>
+
+			<div id="raceInfo">
+				<div id="first_races">
+					<div class="bank_races" id="bank_races"></div>
+					<form id="formRaces" name="formRaces">
+						<fieldset class="frame_races">
+							<legend class="legend_races">Pick Your Winner!</legend>
+							<input type="radio" id="choices" name="choices" value="Green" checked>Green 
+							<input type="radio" name="choices" value="Purple">Purple
+							<br>
+							<input type="radio" name="choices" value="Blue">Blue 
+							<input type="radio" name="choices" value="Orange">Orange
+							<br>
+						</fieldset>
+
+						<fieldset class="frame_races">
+							<legend class="legend_races">Place Your Bet!</legend>
+							<div id="wrapper">
+								<div id="inputContainer">
+									<span id="dollarSign">$</span>
+									<div id="betHolder">
+										<input type="text" id="bet" maxlength="10" placeholder="0000000" autofocus="">
+									</div>
+								</div>
+								<div id='buttonContainer'>
+									<input type="button" onclick="" id='lockIn' class='btn betButton' value="Lock It In!">
+								</div>
+								<div id='buttonContainer2'>
+									<input type="button" onclick="" id='goHome_races' class='btn betButton2' value="Go Home!">
+								</div>
+							</div><!-- end wrapper -->
+							<br>
+						</fieldset>  
+
+						<div class="bookieTalk_races">
+							<fieldset class="frame_races">
+								<legend class="legend_races">Welcome!</legend>
+								<div class="talk"><p class="text">You're just in time for the next race!</p></div><br>
+								<div><p class="text">As you can see, our plump little man-worms are all coked out and ready to roll!</p></div><br>
+								<div><p class="text">So grab yourself a whip and place your bet, and we'll be on our way!</p></div>
+							</fieldset>
+						</div> <!-- end bookieTalk_races -->
+						
+					</form>
+				</div> <!-- end first_races -->
+
+				<div id="second_races">
+					<div class="bank_races" id="bank2_races"></div>
+					<form id="formRaces2" name="formRaces2">
+						<fieldset class="frame2_races">
+							<legend class="legend_races">Your Man-Worm:</legend>
+							<div class="talk" id="yourPick"></div><br>
+						</fieldset>
+						<fieldset class="frame_races">
+							<legend class="legend_races">Your Bet:</legend>
+							<div class="talk" id="yourBet"></div><br>
+						</fieldset>
+						<div class="bookieTalk_races" id="bookieTalk2_races">
+							<fieldset class="frame2_races">
+								<legend class="legend_races">There You Go!</legend>
+								<div class="talk"><p class="text">Now, crack that whip to get those little bastards moving!</p></div><br>
+								<div><p class="text">And I'll tell you right now, you're going to have to whip them more than once!</p></div><br>
+							</fieldset>
+						</div> <!-- end bookieTalk2_races -->
+						<input type="button" onclick="" id='whip' class='btn whipButton' value="Whip Those Worms!">
+						
+					</form>
+				</div> <!-- end second_races -->
+
+				<div id="third_races">
+					<div class="bank_races" id="bank3_races"></div>
+					<form id="formRaces3" name="formRaces3">
+						<fieldset class="frame2_races">
+							<legend class="legend_races">The Results:</legend>
+							<div class="talk" id="winnerResult"></div><br>
+						</fieldset>
+						<fieldset class="frame_races">
+							<legend class="legend_races">The Bottom Line:</legend>
+							<div class="talk" id="wonOrLostMoneyAmount"></div><br>
+						</fieldset>
+						<div class="bookieTalk_races">
+							<fieldset class="frame3_races" id="frameSwitch"></fieldset>
+						</div> <!-- end bookieTalk_races -->
+						<input type="button" onclick="" id='oneMoreRace' class='btn raceButton' value="One More Race!">
+						
+					</form>
+				</div> <!-- end third_races -->
+				<div id="bookie_races"></div>
+			</div> <!-- end info -->
+
+			<!-- pop-up alerts -->
+			<div id="betTooHighAlert" class="alert">Whoa there, buddy! I don't know you well enough to start offering credit! Keep your bet amount within your budget, mm'kay?</div>
+			<div id="numbersOnlyAlert" class="alert">Enter numeric characters only in the bet box, pal.</div>
+			<div id="bookieOpportunity" class="alert">Looks like you're all tapped out, pal. Maybe there's something we can work out to keep you in the game. Are you interested?</div>
+		
+		</div> <!-- end racesMainbody -->
+
+
+<!-- ************************************************************************************************************** -->
+
+	
+		<audio preload="metadata" id="shotgunSound"><source src="sounds/shotgun.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/Marregheriti/ -->
+	    <audio preload="metadata" id="gameOverSound"><source src="sounds/gameOverCompressed.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/themusicalnomad/ -->
+	    <audio loop preload="metadata" id="sirenSound"><source src="sounds/sirenCompressed.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/jwu56/ -->
+	    <audio preload="metadata" id="handcuffsSound"><source src="sounds/handcuffs.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/NoiseCollector/ -->
+	    <audio preload="metadata" id="taserSound"><source src="sounds/taserCompressed.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/BigKahuna360/ -->
+		 <audio preload="metadata" id="glassBreakingSound"><source src="sounds/glassBreaking.wav" type="audio/wav"></audio> <!-- sound created by https://freesound.org/people/wjl/ -->
+
+		<div id="burglaryMainbody">
+			<div id="burglaryLeft">
+				<a href="" id="clicker"><!-- blue house--><img id="blue"
+	             src="images/burglary_blue_house_75_tinyPNG.png"
+	             rel=
+	             "images/burglary_blue_house_selected_green_75_tinyPNG.png"
+	             class="rollover"
+	             alt="house"><!-- red house--><img id="red"
+	             src="images/burglary_red_house_75_tinyPNG.png"
+	             rel=
+	             "images/burglary_red_house_selected_green_75_tinyPNG.png"
+	             class="rollover"
+	             alt="house"><!-- yellow house--><img id="yellow"
+	             src="images/burglary_yellow_house_75_tinyPNG.png"
+	             rel=
+	             "images/burglary_yellow_house_selected_green_75_tinyPNG.png"
+	             class="rollover"
+	             alt="house"><!-- green house--><img id="green"
+	             src="images/burglary_green_house_75_tinyPNG.png"
+	             rel=
+	             "images/burglary_green_house_selected_green_75_tinyPNG.png"
+	             class="rollover"
+	             alt="house"></a> <!-- end clicker -->
+				 
+				 <!-- blue house gray preload--><img id="blueGray"
+	             src=
+	             "images/burglary_blue_house_selected_dark_75_tinyPNG.png"
+	             class="gray" alt="house"> 
+				 <!-- red house gray preload--><img id="redGray"
+	             src=
+	             "images/burglary_red_house_selected_dark_75_tinyPNG.png"
+	             class="gray" alt="house"> 
+				 <!-- yellow house gray preload--><img id="yellowGray"
+	             src=
+	             "images/burglary_yellow_house_selected_dark_75_tinyPNG.png"
+	             class="gray" alt="house" > 
+				 <!-- green house gray preload--><img id="greenGray"
+	             src=
+	             "images/burglary_green_house_selected_dark_75_tinyPNG.png"
+	             class="gray" alt="house"> 
+				 <!-- blue house gold preload--><img id="blueGold"
+	             src=
+	             "images/burglary_blue_house_selected_gold_75_tinyPNG.png"
+	             rel=
+	             "images/burglary_blue_house_selected_gold_robbed_75_tinyPNG.png"
+	             class="gold" alt="house"> 
+				 <!-- red house gold preload--><img id="redGold"
+	             src=
+	             "images/burglary_red_house_selected_gold_75_tinyPNG.png"
+	             rel=
+	             "images/burglary_red_house_selected_gold_robbed_75_tinyPNG.png"
+	             class="gold" alt="house"> 
+				 <!-- yellow house gold preload--><img id="yellowGold"
+	             src=
+	             "images/burglary_yellow_house_selected_gold_75_tinyPNG.png"
+	             rel=
+	             "images/burglary_yellow_house_selected_gold_robbed_75_tinyPNG.png"
+	             class="gold" alt="house"> 
+				 <!-- green house gold preload--><img id="greenGold"
+	             src=
+	             "images/burglary_green_house_selected_gold_75_tinyPNG.png"
+	             rel=
+	             "images/burglary_green_house_selected_gold_robbed_75_tinyPNG.png"
+	             class="gold" alt="house">
+			</div> <!-- end burglaryLeft -->
+			
+			<div id="burglaryRight">
+				<div id="info-top">
+					<div class="copSpeechTop">When the red bar goes away...</div>
+					<div id="redCopBar"></div>
+					<div class="copSpeechBottom">...so do you... FOR LIFE!</div>
+				</div> <!-- end info-top -->
+				
+				<div id="info-bottom">
+					<div id="first_burglary">
+							
+							<form>
+								<fieldset class="frame_burglary">
+									<legend class="legend_burglary">Yo, Degenerate!</legend> <!-- end legend -->  
+									<div class="text" id="runDown"></div> <!-- end runDown -->
+								</fieldset> <!-- end fieldset -->	 
+							</form> <!-- end form -->
+					</div> <!-- end first_burglary -->
+					<div id="second_burglary">
+						<form>
+							<fieldset class="frame_burglary">
+								<legend  class="legend_burglary">Listen Up!</legend> <!-- end legend -->
+								<div class="text" id="burglarize"></div> <!-- end burglarize -->
+								<div class="text" id="clickIt"></div> <!-- end clickIt -->
+								<div class="buttonContainer">
+									<input type="button" class="btn" id="leftButton" value="Burglarize!">
+								</div> <!-- end buttonContainer -->
+								<div class="buttonContainer2">
+									<input type="button" class="btn" id="rightButton" value="Getaway!">
+								</div> <!-- end buttonContainer2 -->
+							</fieldset> <!-- end fieldset -->
+						</form> <!-- end of form -->
+					</div> <!-- end of second_burglary-->
+					<div id="bookie_burglary"></div>
+				</div> <!-- end info-bottom -->
+			</div> <!-- end right_burglary -->
+		</div> <!-- end burglaryMainbody -->
+		<div class="alert" id="alert">Hey, pal, how are you supposed to start burglarizing if you haven't picked a house yet? Click on the house you want to rob, and then we'll get started.</div>
+		<div class="alert" id ="dead">You woke up the owner and you got shot, sucker!</div>
+		<div class="alert" id="copsCalled">Somebody saw you creeping around that house and called the cops, and now they're on their way! Why not just ring the doorbell next time?!</div>
+		<div class="alert" id="busted">Hands behind your back, scumbag! I don't want you trying to block these taser hooks!</div>
+
+
+<!-- ************************************************************************************************************** -->
+	
+		<div id="endGameMainbody">
+			<div id="endGameInnerBody">
+				<p>This is the End Game Screen</p>
+			</div> <!-- end of endGameInnerBody -->
+		</div> <!-- end of endGameMainbody -->
+
+	</div> <!-- end of allPartsOfGameCombined -->
+</body>
+</html>
